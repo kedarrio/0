@@ -44,8 +44,8 @@ export default function HomePage() {
             <div className="projects">
                 <h1>Projects.</h1>
                 <div className="container">
-                    {ProjectsCard('Design.', '/design', design)}
-                    {ProjectsCard('Python.', '/python', mountain)}
+                    {ProjectsCard('Design.', '/0/design', design)}
+                    {ProjectsCard('Python.', '/0/python', mountain)}
                 </div>
             </div>
         </section>

@@ -1,5 +1,5 @@
 // react
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 // styles
 import './App.css'
@@ -15,13 +15,13 @@ import NavBar from './components/Navbar'
 
 export default function App() {
 	return (
-		<Router basename="/0">
+		<Router>
 			<div className="App">
 				<NavBar />
 				<Routes>
-					<Route exact path="/" Component={HomePage} />
-					<Route path='/design' Component={DesignPage} />
-					<Route path='/design/aatmabodh' Component={AatmabodhPage} />
+					<Route exact path="/0" Component={HomePage} />
+					<Route path='/0/design' Component={DesignPage} />
+					<Route path='/0/design/aatmabodh' Component={AatmabodhPage} />
 				</Routes>
 			</div>
 		</Router>
