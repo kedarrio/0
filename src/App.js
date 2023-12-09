@@ -15,10 +15,10 @@ import NavBar from './components/Navbar'
 
 export default function App() {
 	return (
-		<Router>
+		<Router basename="/0">
 			<div className="App">
 				<NavBar />
-				<Routes basename="/portfolio">
+				<Routes>
 					<Route exact path="/" Component={HomePage} />
 					<Route path='/design' Component={DesignPage} />
 					<Route path='/design/aatmabodh' Component={AatmabodhPage} />
