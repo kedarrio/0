@@ -1,0 +1,12 @@
+.aatmabodh {
+    padding: 48px 0;
+    display: flex; flex-direction: column; gap: 48px;
+}
+.aatmabodh img {
+    width: fit-content;
+}
+
+.up {
+    position: fixed;
+    bottom: 48px; right: 48px;
+}

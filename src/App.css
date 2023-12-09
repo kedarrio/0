@@ -1,0 +1,95 @@
+:root {
+    /* colors */
+    --black: #000000;
+    --neutral100: #1a1a1a;
+    --neutral200: #333333;
+    --neutral300: #4D4D4D;
+    --neutral400: #666666;
+    --neutral500: #808080;
+    --neutral600: #999999;
+    --neutral700: #B3B3B3;
+    --neutral800: #CCCCCC;
+    --neutral900: #E6E6E6;
+    --white: #ffffff;
+
+    --red500: #fd4747;
+    --red600: #FD6565;
+    --red700: #FD8484;
+
+    /* constants */
+    --body-padding: 24px;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    height: 200vh;
+}
+
+section {
+    top:56px;
+    height: fit-content; width: calc(100% - var(--body-padding)*2);
+    margin: 56px var(--body-padding) 0 var(--body-padding);
+}
+
+/* components */
+
+.hyperlink {
+    color: var(--red500);
+}
+.hyperlink:hover {
+    text-shadow: 0 0 5px var(--red600);
+}
+
+.card {
+    position: relative;
+    height: 400px; width: 400px;
+    outline: 1px solid var(--white);
+    outline-color: var(--white);
+    overflow: hidden;
+
+}
+.card .text {
+    z-index: 0;
+    width: 100%; height: 100%;
+    display: flex; justify-content: center; align-items: center;
+}
+.card .text p {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.card img {
+    position: absolute; z-index: 1;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: left 0.5s;
+
+    /* opacity: 50%; */
+}
+.card:hover {
+    outline-color: var(--red500); 
+}
+.card:hover img{
+ left: 0;
+}
+
+nav.top {
+    position: fixed; top: 0; z-index: 100;
+    width: calc(100% - var(--body-padding)*2);
+    padding: calc(var(--body-padding)/2) var(--body-padding);
+    display: flex; justify-content: flex-start; align-items: center; gap: 48px;
+    background-color: var(--neutral100);
+}
+nav.top img {
+    height: 32px; width: 32px;
+}
+nav.top ul {
+    display: flex; gap:24px;
+}
+nav.top ul il {
+    height: fit-content; width: fit-content;
+}
