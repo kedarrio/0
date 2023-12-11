@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/0/static/css/main.1b6dc0df.css",
-    "main.js": "/0/static/js/main.c6c18225.js",
+    "main.js": "/0/static/js/main.6346f67d.js",
     "static/media/aatmabodh-presentation.png": "/0/static/media/aatmabodh-presentation.00da5105f0c53a5c9e1c.png",
     "static/media/mountain.gif": "/0/static/media/mountain.22a90d9ceebf87ec6559.gif",
     "static/media/vibe-cat.gif": "/0/static/media/vibe-cat.4325228ac258ffca7ee3.gif",
@@ -9,10 +9,10 @@
     "static/media/aatmabhod.png": "/0/static/media/aatmabhod.dcf2287cd2b502afb4bc.png",
     "index.html": "/0/index.html",
     "main.1b6dc0df.css.map": "/0/static/css/main.1b6dc0df.css.map",
-    "main.c6c18225.js.map": "/0/static/js/main.c6c18225.js.map"
+    "main.6346f67d.js.map": "/0/static/js/main.6346f67d.js.map"
   },
   "entrypoints": [
     "static/css/main.1b6dc0df.css",
-    "static/js/main.c6c18225.js"
+    "static/js/main.6346f67d.js"
   ]
 }
