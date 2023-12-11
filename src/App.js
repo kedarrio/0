@@ -26,7 +26,7 @@ function NonExistentPage () {
 
 export default function App() {
 	return (
-		<Router basename={"/0"}>
+		<Router>
 			<div className="App">
 				<NavBar />
 				<Routes>
