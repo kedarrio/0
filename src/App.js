@@ -12,16 +12,28 @@ import AatmabodhPage from './pages/Aatmabodh';
 // components
 import NavBar from './components/Navbar'
 
+// 404
+function NonExistentPage () {
+    return (
+		<section className="nothing">
+			<h1>
+				Nothing Here :)
+			</h1>
+
+		</section>
+    )
+}
 
 export default function App() {
 	return (
-		<Router>
+		<Router basename={"/0"}>
 			<div className="App">
 				<NavBar />
 				<Routes>
-					<Route exact path="/0" Component={HomePage} />
-					<Route path='/0/design' Component={DesignPage} />
-					<Route path='/0/design/aatmabodh' Component={AatmabodhPage} />
+					<Route exact path="/" Component={HomePage} />
+					<Route path='/design' Component={DesignPage} />
+					<Route path='/design/aatmabodh' Component={AatmabodhPage} />
+					<Route path='/*' Component={NonExistentPage}/>
 				</Routes>
 			</div>
 		</Router>

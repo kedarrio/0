@@ -12,7 +12,7 @@ export default function DesignPage() {
         <section className="design">
             <h1>Design Projects.</h1>
             <div className="container">
-                {ProjectsCard('Aatmabhod.', '/0/design/aatmabodh', Aatmabhod)}
+                {ProjectsCard('Aatmabhod.', '/design/aatmabodh', Aatmabhod)}
             </div>
         </section>
     )
