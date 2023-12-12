@@ -24,16 +24,17 @@ function NonExistentPage () {
     )
 }
 
+
 export default function App() {
 	return (
 		<Router>
 			<div className="App">
 				<NavBar />
 				<Routes>
-					<Route exact path="/" Component={HomePage} />
-					<Route path='/design' Component={DesignPage} />
-					<Route path='/design/aatmabodh' Component={AatmabodhPage} />
-					<Route path='/*' Component={NonExistentPage}/>
+					<Route exact path="https://zero-fhav.onrender.com/" Component={HomePage} />
+					<Route path='https://zero-fhav.onrender.com/design' Component={DesignPage} />
+					<Route path='https://zero-fhav.onrender.com/design/aatmabodh' Component={AatmabodhPage} />
+					<Route path='https://zero-fhav.onrender.com/*' Component={NonExistentPage}/>
 				</Routes>
 			</div>
 		</Router>
