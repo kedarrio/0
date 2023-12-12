@@ -7,7 +7,7 @@ export default function NavBar() {
         <nav className="top">
             <img src={Logo} alt="logo" />
             <ul className="nav-list">
-                <li className="nav-item">{hyperLink('Home', '/0')}</li>
+                <li className="nav-item">{hyperLink('Home', '/')}</li>
                 <li className="nav-item">{hyperLink('Get in touch?', 'mailto: kedarmulay1@gmail.com')}</li>
             </ul>
         </nav>
