@@ -12,6 +12,8 @@ import AatmabodhPage from './pages/Aatmabodh';
 // components
 import NavBar from './components/Navbar'
 
+
+
 // 404
 function NonExistentPage () {
     return (
